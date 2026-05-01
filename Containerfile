@@ -34,9 +34,11 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh
-    
+
+RUN rpm-ostree install -y python3 htop fastfetch && rpm-ostree cleanup -m
+
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
 
-RUN rpm-ostree install -y python3 htop fastfetch && rpm-ostree cleanup -m
+
