@@ -38,6 +38,10 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 RUN rpm-ostree install -y python3 htop fastfetch && rpm-ostree cleanup -m
 RUN rpm-ostree override remove lutris
 
+# Custom OS Branding
+RUN sed -i 's/NAME="Bazzite"/NAME="Thalassa"/g' /usr/lib/os-release && \
+    sed -i 's/PRETTY_NAME="Bazzite"/PRETTY_NAME="Thalassa"/g' /usr/lib/os-release
+
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
