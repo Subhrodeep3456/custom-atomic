@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Run this to install apps
+#curl -sSL https://raw.githubusercontent.com/comet-core/vela-image/main/install_apps.sh | bash
 echo "Starting Vela Post-Install Application Setup..."
 
 # Ensure Flathub repository is added
