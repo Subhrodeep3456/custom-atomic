@@ -1,4 +1,4 @@
-# 🌌 Custom Atomic OS
+# 🌌 Custom Atomic OS (VelaOS)
 
 A custom, atomic operating system built on top of `ublue-os/bazzite-nvidia:stable`. 
 Engineered to be the perfect hybrid between a high-refresh-rate gaming station and a robust development environment for Electronics and Telecommunications engineering.
