@@ -1,12 +1,21 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "/usr/share/vela/vela-logo.txt",
+    "color": {
+      "1": "cyan",
+      "2": "blue"
+    }
+  },
+  
   "display": {
     "separator": " : "
   },
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[36m  󰄛  コンピューター"
+      "format": "\u001b[36m  󰄛  VelaOS"
     },
     {
       "type": "custom",
