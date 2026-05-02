@@ -36,6 +36,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     /ctx/build.sh
 
 RUN rpm-ostree install -y python3 htop fastfetch && rpm-ostree cleanup -m
+RUN rpm-ostree override remove lutris
 
 ### LINTING
 ## Verify final image and contents are correct.
