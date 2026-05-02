@@ -42,6 +42,10 @@ RUN rpm-ostree override remove lutris
 RUN sed -i 's/NAME="Bazzite"/NAME="Vela"/g' /usr/lib/os-release && \
     sed -i 's/PRETTY_NAME="Bazzite"/PRETTY_NAME="Vela"/g' /usr/lib/os-release
 
+# Bake in Fastfetch layout and quotes
+COPY quotes.txt /usr/share/vela/quotes.txt
+COPY config.jsonc /etc/fastfetch/config.jsonc
+
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
