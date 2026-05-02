@@ -4,8 +4,8 @@
     "type": "file",
     "source": "/usr/share/vela/vela-logo.txt",
     "color": {
-      "1": "cyan",
-      "2": "blue"
+      "1": "magenta",
+      "2": "light_magenta"
     }
   },
   
