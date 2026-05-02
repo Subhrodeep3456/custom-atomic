@@ -15,7 +15,7 @@
   "modules": [
     {
       "type": "custom",
-      "format": "\u001b[36m  󰄛  VelaOS"
+      "format": "\u001b[35m  󰄛  VelaOS"
     },
     {
       "type": "custom",
@@ -30,18 +30,18 @@
       "type": "os",
       "key": "  󰣇 OS",
       "format": "{2}",
-      "keyColor": "red"
+      "keyColor": "pink"
     },
     {
       "type": "kernel",
       "key": "   Kernel",
       "format": "{2}",
-      "keyColor": "red"
+      "keyColor": "magenta"
     },
     {
       "type": "packages",
       "key": "  󰏗 Packages",
-      "keyColor": "green"
+      "keyColor": "cyan"
     },
     {
       "type": "display",
@@ -52,13 +52,13 @@
     {
       "type": "terminal",
       "key": "  >_ Terminal",
-      "keyColor": "yellow"
+      "keyColor": "pink"
     },
     {
       "type": "wm",
       "key": "  󱗃 WM",
       "format": "{2}",
-      "keyColor": "yellow"
+      "keyColor": "magenta"
     },
     {
       "type": "custom",
